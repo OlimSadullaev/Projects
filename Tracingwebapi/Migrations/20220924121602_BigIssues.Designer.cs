@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Tracingwebapi.Data;
 
@@ -11,9 +12,10 @@ using Tracingwebapi.Data;
 namespace Tracingwebapi.Migrations
 {
     [DbContext(typeof(IssueDbContext))]
-    partial class IssueDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220924121602_BigIssues")]
+    partial class BigIssues
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

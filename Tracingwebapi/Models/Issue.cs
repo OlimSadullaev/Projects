@@ -10,24 +10,16 @@ namespace Tracingwebapi.Models
         public string Title { get; set; }
 
         [Required]
-        public Priority Priority { get; set; }
+        public string Priority { get; set; }
 
-        public IssueType IssueType { get; set; }
+        public string IssueType { get; set; }
 
         public DateTime Created { get; set; }
 
         public DateTime? Completed { get; set; }
     }
 
-    public enum Priority
-    {
-        Low, Medium, High
-    }
-
-    public enum IssueType
-    {
-        Feature, Bug, Documentation
-    }
+    
 
 
 }
