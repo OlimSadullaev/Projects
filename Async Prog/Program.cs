@@ -1,2 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace asyncProg
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a;
+
+            foreach(char c in "banana")
+            {
+                Console.WriteLine(c);
+            }
+        }
+    }
+}

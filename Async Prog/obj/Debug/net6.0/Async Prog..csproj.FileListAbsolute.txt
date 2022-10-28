@@ -1,0 +1,15 @@
+C:\Users\user\PPTX\Projects\Async Prog\obj\Debug\net6.0\Async Prog..csproj.AssemblyReference.cache
+C:\Users\user\PPTX\Projects\Async Prog\obj\Debug\net6.0\Async Prog..GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\PPTX\Projects\Async Prog\obj\Debug\net6.0\Async Prog..AssemblyInfoInputs.cache
+C:\Users\user\PPTX\Projects\Async Prog\obj\Debug\net6.0\Async Prog..AssemblyInfo.cs
+C:\Users\user\PPTX\Projects\Async Prog\obj\Debug\net6.0\Async Prog..csproj.CoreCompileInputs.cache
+C:\Users\user\PPTX\Projects\Async Prog\bin\Debug\net6.0\Async Prog..exe
+C:\Users\user\PPTX\Projects\Async Prog\bin\Debug\net6.0\Async Prog..deps.json
+C:\Users\user\PPTX\Projects\Async Prog\bin\Debug\net6.0\Async Prog..runtimeconfig.json
+C:\Users\user\PPTX\Projects\Async Prog\bin\Debug\net6.0\Async Prog..dll
+C:\Users\user\PPTX\Projects\Async Prog\bin\Debug\net6.0\Async Prog..pdb
+C:\Users\user\PPTX\Projects\Async Prog\obj\Debug\net6.0\Async Prog..dll
+C:\Users\user\PPTX\Projects\Async Prog\obj\Debug\net6.0\refint\Async Prog..dll
+C:\Users\user\PPTX\Projects\Async Prog\obj\Debug\net6.0\Async Prog..pdb
+C:\Users\user\PPTX\Projects\Async Prog\obj\Debug\net6.0\Async Prog..genruntimeconfig.cache
+C:\Users\user\PPTX\Projects\Async Prog\obj\Debug\net6.0\ref\Async Prog..dll
