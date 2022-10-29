@@ -1,32 +1,30 @@
-﻿namespace asyncProg
+﻿using System.Text;
+
+namespace asyncProg
 {
     class Program
     {
-        static async Task<string> ReadFileAsync(string file)
+        static string abc(string aaa)
         {
-            string content = string.Empty;
-
-            using (StreamReader reader = new StreamReader(file))
-            {
-                content = await reader.ReadToEndAsync();
-            }
-
-            return content;
+            return ($"your name is {aaa}");
         }
 
-        static async void ContentToConsole()
+        /*static async void ContentToConsole()
         {
             string readFileTask = await ReadFileAsync("c:\\temp\\file.txt");
 
             Console.WriteLine("Fayldagi ma'lumotlar:" + readFileTask);
-        }
+        }*/
 
         static void Main(string[] args)
         {
-            Task task = new Task(ContentToConsole);
-            task.Start();
-            task.Wait();
-            Console.ReadLine();
+            string bbb = Console.ReadLine();
+            abc(bbb);
+
+            StringBuilder sbr = new StringBuilder("My Favourite Programming Font is ");
+            sbr.Append("Inconsolata");
+            Console.WriteLine(sbr);
+
         }
     }
 }
