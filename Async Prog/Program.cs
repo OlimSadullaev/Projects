@@ -4,10 +4,6 @@ namespace asyncProg
 {
     class Program
     {
-        static string abc(string aaa)
-        {
-            return ($"your name is {aaa}");
-        }
 
         /*static async void ContentToConsole()
         {
@@ -19,11 +15,15 @@ namespace asyncProg
         static void Main(string[] args)
         {
             string bbb = Console.ReadLine();
-            abc(bbb);
 
-            StringBuilder sbr = new StringBuilder("My Favourite Programming Font is ");
-            sbr.Append("Inconsolata");
+
+            StringBuilder sbr = new StringBuilder("Hello ");
+            sbr.Append("World");
             Console.WriteLine(sbr);
+
+            StringBuilder sbbb = new StringBuilder("your full name is work on br");
+            sbbb.Length = 5;
+            Console.WriteLine(sbbb);
 
         }
     }
