@@ -34,7 +34,7 @@ namespace asyncProg
             Console.WriteLine(obj);
             Console.WriteLine(obj);
             Console.WriteLine(obj);
-            Console.WriteLine(obj);
+            Console.WriteLine(obj); 
 
 
         }
