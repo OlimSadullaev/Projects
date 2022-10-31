@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Async_Prog_
 {
-    internal class student
+    public class student
     {
-        public int ID { get; set; }
-        public string LName { get; set; }
-        public string SName { get; set; }
-        public int school_id { get; set; }
+        int ID = 854389;
+        string FName = "Olim";
+        string LName = "Sadullaev";
+        int school_id = 1234560;
 
     }
 }

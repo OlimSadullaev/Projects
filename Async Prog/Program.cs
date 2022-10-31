@@ -1,4 +1,5 @@
-﻿using System.Net.Security;
+﻿using Async_Prog_;
+using System.Net.Security;
 using System.Text;
 
 namespace asyncProg
@@ -28,6 +29,12 @@ namespace asyncProg
 
             StringBuilder abb = new StringBuilder("ncjfdnjk ncvdfei incdf");
             abb.AppendLine("mcdkjskdcj");
+
+            student obj = new student();
+            Console.WriteLine(obj);
+            Console.WriteLine(obj);
+            Console.WriteLine(obj);
+            Console.WriteLine(obj);
 
 
         }
