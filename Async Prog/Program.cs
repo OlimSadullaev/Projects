@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Net.Security;
+using System.Text;
 
 namespace asyncProg
 {
@@ -21,9 +22,13 @@ namespace asyncProg
             sbr.Append("World");
             Console.WriteLine(sbr);
 
-            StringBuilder sbbb = new StringBuilder("your full name is work on br");
+            StringBuilder sbbb = new StringBuilder("Your full name is work on br");
             sbbb.Length = 5;
-            Console.WriteLine(sbbb);
+            Console.WriteLine(sbbb); // printing your n elements
+
+            StringBuilder abb = new StringBuilder("ncjfdnjk ncvdfei incdf");
+            abb.AppendLine("mcdkjskdcj");
+
 
         }
     }
