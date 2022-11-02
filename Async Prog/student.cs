@@ -13,6 +13,8 @@ namespace Async_Prog_
         string LName = "Sadullaev";
         int school_id = 1234560;
 
+
+
     }
 
     

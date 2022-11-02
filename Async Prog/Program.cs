@@ -25,8 +25,8 @@ namespace asyncProg
 
             //-------------------
 
-            float a = 5;
-            kvadrad(a, out float yuza1, out float peremetr1, out float radius1);
+            float q = 5;
+            kvadrad(q, out float yuza1, out float peremetr1, out float radius1);
 
             Console.WriteLine(yuza1 + "  " + peremetr1 + " " + radius1);
             Console.ReadKey();
@@ -47,6 +47,58 @@ namespace asyncProg
             int[,] nums4 = new int[,] { { 0,1,2} };
             int[,] nums5 = new[,] { { 0, 1, 2 }, { 3, 4, 5 } };
             int[,] nums6 = { { 0, 1, 2 }, { 3, 4, 5 } };
+
+            StringBuilder strB = new StringBuilder();
+            StringBuilder stB = new StringBuilder();
+            for (int i = 0; i < 1000; i++)
+            {
+                strB.Append("Salom ");
+            }
+
+            string str = " Yes ";
+
+            strB.Append(str);
+            Console.WriteLine(strB); //output:   Hello World!! Yes 
+
+
+            strB.Remove(0, 11);
+
+            Console.WriteLine(strB);
+            //output: !!
+
+            strB.Replace("World", "C#");
+
+            Console.WriteLine(strB);
+            //output: Hello C#!!
+
+            Console.WriteLine(strB); //output: Hello World!!
+            strB.Clear();
+            Console.WriteLine(strB);
+
+            StringBuilder sb = new StringBuilder("Hello World!");
+            sb.Insert(5, " C#");
+
+            Console.WriteLine(sb);
+
+            double s, a, x;
+            try
+            {
+                Console.Write("a=");
+                a = Double.Parse(Console.ReadLine()); Console.Write("x=");
+                x = Double.Parse(Console.ReadLine());
+
+                s = (a * a + Math.Exp(2 * a - 6)) / (x * (a + Math.Pow(2, x)));
+                Console.WriteLine("s=" + s);
+            }
+            catch (SystemException ex)
+            {
+                Console.WriteLine("Ifodaning qiymatini hisoblashda" + ex.Message + " xatolik yuz berdi");
+            }
+            finally
+            {
+                Console.WriteLine("Ifodaning qiymatini hisoblash tugadi");
+            }
+            Console.ReadLine();
         }
 
         static void kvadrad(float a, out float yuza, out float peremetr, out float radius)
