@@ -85,9 +85,11 @@ namespace asyncProg
             {
                 Console.Write("a=");
                 a = Double.Parse(Console.ReadLine()); Console.Write("x=");
+
                 x = Double.Parse(Console.ReadLine());
 
                 s = (a * a + Math.Exp(2 * a - 6)) / (x * (a + Math.Pow(2, x)));
+
                 Console.WriteLine("s=" + s);
             }
             catch (SystemException ex)
