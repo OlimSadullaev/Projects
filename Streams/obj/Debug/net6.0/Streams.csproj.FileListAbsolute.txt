@@ -1,0 +1,15 @@
+C:\Users\user\PPTX\Projects\Streams\bin\Debug\net6.0\Streams.exe
+C:\Users\user\PPTX\Projects\Streams\bin\Debug\net6.0\Streams.deps.json
+C:\Users\user\PPTX\Projects\Streams\bin\Debug\net6.0\Streams.runtimeconfig.json
+C:\Users\user\PPTX\Projects\Streams\bin\Debug\net6.0\Streams.dll
+C:\Users\user\PPTX\Projects\Streams\bin\Debug\net6.0\Streams.pdb
+C:\Users\user\PPTX\Projects\Streams\obj\Debug\net6.0\Streams.csproj.AssemblyReference.cache
+C:\Users\user\PPTX\Projects\Streams\obj\Debug\net6.0\Streams.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\PPTX\Projects\Streams\obj\Debug\net6.0\Streams.AssemblyInfoInputs.cache
+C:\Users\user\PPTX\Projects\Streams\obj\Debug\net6.0\Streams.AssemblyInfo.cs
+C:\Users\user\PPTX\Projects\Streams\obj\Debug\net6.0\Streams.csproj.CoreCompileInputs.cache
+C:\Users\user\PPTX\Projects\Streams\obj\Debug\net6.0\Streams.dll
+C:\Users\user\PPTX\Projects\Streams\obj\Debug\net6.0\refint\Streams.dll
+C:\Users\user\PPTX\Projects\Streams\obj\Debug\net6.0\Streams.pdb
+C:\Users\user\PPTX\Projects\Streams\obj\Debug\net6.0\Streams.genruntimeconfig.cache
+C:\Users\user\PPTX\Projects\Streams\obj\Debug\net6.0\ref\Streams.dll
