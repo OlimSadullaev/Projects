@@ -24,6 +24,18 @@ namespace Streams
         //static Hashtable userInfoHash();
         static void Main(string[] args)
         {
+            string date = "05/12/20143";
+            Predicate<string> checkValidDate = d => IsDate(d);
+            if (checkValidDate(date))
+            {
+                Console.WriteLine("Valid Date");
+            }
+            else
+            {
+                Console.WriteLine("Invalid Date");
+            }
+            Console.ReadKey();
+
             Func<int> GetRandomNum = delegate ()
             {
                 Random rnd = new Random();
@@ -83,6 +95,12 @@ namespace Streams
             {
                 KeyPressed();
             };
+        }
+
+        private static bool IsDate(string date)
+        {
+            DateTime dt;
+            return DateTime.TryParse(date, out dt);
         }
 
         static void KeyPressed()
