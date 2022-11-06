@@ -8,10 +8,43 @@ namespace Streams
 {
     class Program
     {
-        static Hashtable userInfoHash();
+        public delegate void Print(int val);
+
+        /*static void ConsolePrint(int i)
+        {
+            Console.WriteLine(i);
+            Console.WriteLine("Print delegati yordamida ekranga chiqarildi");
+        }*/
+
+        static void ConsolePrint(int i)
+        {
+            Console.WriteLine(i);
+            Console.WriteLine("Action delegati yordamida ekranga chiqarildi");
+        }
+        //static Hashtable userInfoHash();
         static void Main(string[] args)
         {
-            userInfoHash abc = new Hashtable();
+            Func<int> GetRandomNum = delegate ()
+            {
+                Random rnd = new Random();
+                return rnd.Next(1, 100);
+            };
+
+            Func<int> getRandomNumber = () => new Random().Next(1, 100);
+            //yoki
+            Func<int, int, int> Sum = (x, y) => x + y;
+
+            Print del_print = ConsolePrint;
+            del_print(10);
+
+            Console.ReadKey();
+            Console.WriteLine("----------------");
+            Action<int> act_print = ConsolePrint;
+            act_print(101);
+
+            Console.ReadKey();
+
+            /*userInfoHash abc = new Hashtable();
             
             for (int i = 0; i < 10; i++)
             {
@@ -21,7 +54,7 @@ namespace Streams
             if (userInfoHash.ContainsKey(0))
             {
                 userInfoHash.Remove(0);
-            }
+            }*/
             // var movieDataManager = new MovieDataManager();
             //var movies = movieDataManager.GetAllMovies();
 
