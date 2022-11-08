@@ -10,11 +10,11 @@ namespace Streams
     {
         public delegate void Print(int val);
 
-        /*static void ConsolePrint(int i)
+        static void ConsolePrint(int i)
         {
             Console.WriteLine(i);
             Console.WriteLine("Print delegati yordamida ekranga chiqarildi");
-        }*/
+        }
 
         static void ConsolePrint(int i)
         {
@@ -67,7 +67,7 @@ namespace Streams
             Console.WriteLine(Convert.ToString(myBool));
 
 
-            /*userInfoHash abc = new Hashtable();
+            userInfoHash abc = new Hashtable();
             
             for (int i = 0; i < 10; i++)
             {
@@ -78,15 +78,15 @@ namespace Streams
             {
                 userInfoHash.Remove(0);
             }*/
-            // var movieDataManager = new MovieDataManager();
-            //var movies = movieDataManager.GetAllMovies();
+             var movieDataManager = new MovieDataManager();
+            var movies = movieDataManager.GetAllMovies();
 
-            /* foreach(var movie in movies)
+             foreach(var movie in movies)
              {
                  Console.WriteLine(movie.Title);
-             }*/
+             }
 
-            /*FileStream F = new FileStream(@"C:\\Users\\user\\Desktop\\file\\salam.txt", FileMode.OpenOrCreate);
+            FileStream F = new FileStream(@"C:\\Users\\user\\Desktop\\file\\salam.txt", FileMode.OpenOrCreate);
             Console.WriteLine("Enter the text : ");
 
             string s = Console.ReadLine();
@@ -95,11 +95,11 @@ namespace Streams
             foreach(byte item in ascii)
             {
                 F.WriteByte(item);
-            }
+            };
 
             Console.Write("Data successfully written named as salam.txt");
 
-            F.Close();*/
+            F.Close();
             Console.WriteLine("Press A to simulate a button click");
             var key = Console.ReadLine();
             if (key == "a")
