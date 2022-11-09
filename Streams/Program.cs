@@ -116,7 +116,7 @@ namespace Streams
 
                 Console.WriteLine(num1 / num2);
             }
-            catch (Exception e)
+            catch (DivideByZeroException e)
             {
                 Console.WriteLine(e.Message);
             }
