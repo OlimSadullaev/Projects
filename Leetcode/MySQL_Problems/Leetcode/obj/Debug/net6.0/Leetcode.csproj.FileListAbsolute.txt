@@ -1,0 +1,15 @@
+C:\Users\user\PPTX\Projects\Leetcode\MySQL_Problems\Leetcode\bin\Debug\net6.0\Leetcode.exe
+C:\Users\user\PPTX\Projects\Leetcode\MySQL_Problems\Leetcode\bin\Debug\net6.0\Leetcode.deps.json
+C:\Users\user\PPTX\Projects\Leetcode\MySQL_Problems\Leetcode\bin\Debug\net6.0\Leetcode.runtimeconfig.json
+C:\Users\user\PPTX\Projects\Leetcode\MySQL_Problems\Leetcode\bin\Debug\net6.0\Leetcode.dll
+C:\Users\user\PPTX\Projects\Leetcode\MySQL_Problems\Leetcode\bin\Debug\net6.0\Leetcode.pdb
+C:\Users\user\PPTX\Projects\Leetcode\MySQL_Problems\Leetcode\obj\Debug\net6.0\Leetcode.csproj.AssemblyReference.cache
+C:\Users\user\PPTX\Projects\Leetcode\MySQL_Problems\Leetcode\obj\Debug\net6.0\Leetcode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\PPTX\Projects\Leetcode\MySQL_Problems\Leetcode\obj\Debug\net6.0\Leetcode.AssemblyInfoInputs.cache
+C:\Users\user\PPTX\Projects\Leetcode\MySQL_Problems\Leetcode\obj\Debug\net6.0\Leetcode.AssemblyInfo.cs
+C:\Users\user\PPTX\Projects\Leetcode\MySQL_Problems\Leetcode\obj\Debug\net6.0\Leetcode.csproj.CoreCompileInputs.cache
+C:\Users\user\PPTX\Projects\Leetcode\MySQL_Problems\Leetcode\obj\Debug\net6.0\Leetcode.dll
+C:\Users\user\PPTX\Projects\Leetcode\MySQL_Problems\Leetcode\obj\Debug\net6.0\refint\Leetcode.dll
+C:\Users\user\PPTX\Projects\Leetcode\MySQL_Problems\Leetcode\obj\Debug\net6.0\Leetcode.pdb
+C:\Users\user\PPTX\Projects\Leetcode\MySQL_Problems\Leetcode\obj\Debug\net6.0\Leetcode.genruntimeconfig.cache
+C:\Users\user\PPTX\Projects\Leetcode\MySQL_Problems\Leetcode\obj\Debug\net6.0\ref\Leetcode.dll
