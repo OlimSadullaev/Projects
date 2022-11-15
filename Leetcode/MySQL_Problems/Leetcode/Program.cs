@@ -72,10 +72,55 @@ var arrlist = new ArrayList(); // recommended
 Console.WriteLine(person);
 */
 
-var primes = Tuple.Create(2, 3, 5, 7, 11, 13, 17, 19);
+/*var primes = Tuple.Create(2, 3, 5, 7, 11, 13, 17, 19);
 Console.WriteLine("Prime numbers less than 20: " +
                   "{0}, {1}, {2}, {3}, {4}, {5}, {6}, and {7}",
                   primes.Item1, primes.Item2, primes.Item3,
                   primes.Item4, primes.Item5, primes.Item6,
                   primes.Item7, primes.Rest.Item1);
-Console.WriteLine(primes);
+Console.WriteLine(primes);*/
+
+/*class DecendingComparer<TKey> : IComparer<int>
+{
+    public int Compare(int x, int y)
+    {
+        return y.CompareTo(x);      ////SortedList with additional class 
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        SortedList<int, int> descSortedList = new SortedList<int, int>(new DecendingComparer<int>());
+        descSortedList.Add(1, 1);
+        descSortedList.Add(4, 4);
+        descSortedList.Add(3, 3);
+        descSortedList.Add(2, 2);
+
+        for (int i = 0; i < descSortedList.Count; i++)
+        {
+            Console.WriteLine("key: {0}, value: {1}", descSortedList.Keys[i], descSortedList.Values[i]);
+        }
+    }
+}*/
+
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        var descendingComparer = Comparer<int>.Create((x, y) => y.CompareTo(x));
+
+        SortedList<int, int> descSortedList = new SortedList<int, int>(descendingComparer);
+        descSortedList.Add(1, 1);
+        descSortedList.Add(4, 4);
+        descSortedList.Add(3, 3);
+        descSortedList.Add(2, 2);       //// without creating class sorted list descending order.
+
+        for (int i = 0; i < descSortedList.Count; i++)
+        {
+            Console.WriteLine("key: {0}, value: {1}", descSortedList.Keys[i], descSortedList.Values[i]);
+        }
+    }
+}
