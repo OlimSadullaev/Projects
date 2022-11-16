@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Leetcode
 {
-    internal class Hello_world
+    public class Hello_world
     {
+
     }
 }

@@ -1,4 +1,6 @@
 ﻿using System.Collections;
+using System.IO;
+using System.Text;
 
 /*var c=0;
  c = int.Parse(Console.ReadLine());
@@ -125,7 +127,7 @@ class Program
     }
 }*/
 
-SortedList<int, string> numberNames = new SortedList<int, string>();
+/*SortedList<int, string> numberNames = new SortedList<int, string>();
 numberNames.Add(3, "Three");
 numberNames.Add(1, "One");
 numberNames.Add(2, "Two");
@@ -154,4 +156,49 @@ Console.WriteLine("---After adding new key-values--");
 
 foreach (var kvp in numberNames)
     Console.WriteLine("key: {0}, value: {1}", kvp.Key, kvp.Value);
-Console.ReadKey();
+Console.ReadKey();*/
+
+class Program
+{
+    static void WriteFile(string Filename)
+    {
+        FileStream fs = new FileStream(Filename, FileMode.Open, FileAccess.Write);
+
+        if (fs.CanWrite)
+        {
+            byte[] buffer = Encoding.ASCII.GetBytes("Hello world");
+            fs.Write(buffer, 0, buffer.Length);
+        }
+
+        fs.Flush();
+        fs.Close();
+    }
+
+    static void ReadFile(string Filename)
+    {
+        FileStream fs = new FileStream(Filename, FileMode.Open,FileAccess.Read );
+        if (fs.CanRead)
+        {
+            byte[] buffer = new byte[1024];
+            int bytesread = fs.Read(buffer, 0, buffer.Length);
+
+            Console.WriteLine(Encoding.ASCII.GetString(buffer, 0, bytesread));
+        }
+        
+
+        fs.Close();
+    }
+    static void Main(string[] args)
+    {
+        string Filename = @"C:\Users\user\Desktop\New folder\Doc.txt.txt";
+
+        ReadFile(Filename);
+
+        WriteFile(Filename);
+
+
+        
+
+        Console.Read();
+    }
+}
