@@ -166,7 +166,7 @@ class Program
 
         if (fs.CanWrite)
         {
-            byte[] buffer = Encoding.ASCII.GetBytes("### Hello world ### i");
+            byte[] buffer = Encoding.ASCII.GetBytes("!!! Writing to the memory successfully finished !!! ");
             fs.Write(buffer, 0, buffer.Length);
         }
 
