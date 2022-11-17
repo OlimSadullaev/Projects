@@ -158,7 +158,7 @@ foreach (var kvp in numberNames)
     Console.WriteLine("key: {0}, value: {1}", kvp.Key, kvp.Value);
 Console.ReadKey();*/
 
-/*class Program
+class Program
 {
     static void WriteFile(string Filename)
     {
@@ -166,7 +166,7 @@ Console.ReadKey();*/
 
         if (fs.CanWrite)
         {
-            byte[] buffer = Encoding.ASCII.GetBytes("Hello world");
+            byte[] buffer = Encoding.ASCII.GetBytes("### Hello world ### i");
             fs.Write(buffer, 0, buffer.Length);
         }
 
@@ -203,19 +203,19 @@ Console.ReadKey();*/
     }
 
     
-}*/
+}
 
-FileInfo fi = new FileInfo(@"D:\DummyFile.txt");
+ // FileInfo fi = new FileInfo(@"D:\DummyFile.txt");
 
 //Open a file for Read\Write
-FileStream fs = fi.Open(FileMode.OpenOrCreate, FileAccess.Read, FileShare.Read);
+//FileStream fs = fi.Open(FileMode.OpenOrCreate, FileAccess.Read, FileShare.Read);
 
 //Create an object of StreamReader by passing FileStream object on which it needs to operates on
-StreamReader sr = new StreamReader(fs);
+// StreamReader sr = new StreamReader(fs);
 
 //Use the ReadToEnd method to read all the content from file
-string fileContent = sr.ReadToEnd();
+// string fileContent = sr.ReadToEnd();
 
 //Close the StreamReader object after operation
-sr.Close();
-fs.Close();
+// sr.Close();
+// fs.Close();/*
