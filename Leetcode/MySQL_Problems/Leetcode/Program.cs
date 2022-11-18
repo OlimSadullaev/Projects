@@ -203,7 +203,7 @@ class Program
     }
 
     
-}
+}  
 
  // FileInfo fi = new FileInfo(@"D:\DummyFile.txt");
 
@@ -219,3 +219,4 @@ class Program
 //Close the StreamReader object after operation
 // sr.Close();
 // fs.Close();/*
+
