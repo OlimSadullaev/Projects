@@ -158,7 +158,7 @@ foreach (var kvp in numberNames)
     Console.WriteLine("key: {0}, value: {1}", kvp.Key, kvp.Value);
 Console.ReadKey();*/
 
-class Program
+/*class Program
 {
     static void WriteFile(string Filename)
     {
@@ -203,9 +203,9 @@ class Program
     }
 
     
-}  
+} */
 
- // FileInfo fi = new FileInfo(@"D:\DummyFile.txt");
+// FileInfo fi = new FileInfo(@"D:\DummyFile.txt");
 
 //Open a file for Read\Write
 //FileStream fs = fi.Open(FileMode.OpenOrCreate, FileAccess.Read, FileShare.Read);
@@ -220,3 +220,26 @@ class Program
 // sr.Close();
 // fs.Close();/*
 
+// Data source
+string[] names = { "Bill", "Steve", "James", "Mohan" };
+
+// LINQ Query 
+var myLinqQuery = from name in names
+                  where name.Contains('a')
+                  select name;
+
+// Query execution
+foreach (var name in myLinqQuery)
+    Console.Write(name + " ");
+Console.WriteLine();
+
+
+string[] cars = { "Lamo", "Aston_Martin", "Charles", "Apple", "Alfa Romeo", "Alpina"};
+
+var linq = from car in cars
+           where car.Distinct().Contains('a')
+           select car;
+foreach (var car in linq)
+    Console.Write(car + ' ');
+
+Console.Read();
