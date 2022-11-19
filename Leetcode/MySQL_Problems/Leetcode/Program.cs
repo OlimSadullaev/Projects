@@ -265,7 +265,7 @@ class Program
             new Student() { StudentID = 7, StudentName = "Rob",Age = 19  },
         };
 
-        Student[] students = new Student[10];
+        /*Student[] students = new Student[10];
 
         int i = 0;
 
@@ -277,7 +277,40 @@ class Program
                 i++;
             }
             Console.WriteLine();
-        }
+        }*/
 
+        Student[] teenAgerStudents = studentArray.Where(s => s.Age > 12 && s.Age < 20).ToArray();
+
+        // Use LINQ to find first student whose name is Bill 
+        Student bill = studentArray.Where(s => s.StudentName == "Bill").FirstOrDefault();
+
+        // Use LINQ to find student whose StudentID is 5
+        Student student5 = studentArray.Where(s => s.StudentID == 5).FirstOrDefault();
+
+
+        IList<string> stringList = new List<string>() {
+            "C# Tutorials",
+            "VB.NET Tutorials",
+            "Learn C++",
+            "MVC Tutorials" ,
+            "Java"
+        };
+
+        var result = from s in stringList
+                     where s.Contains("Tutorials")
+                     select s;
+        Console.WriteLine(result);
+        Console.WriteLine("----------------------");
+
+        IList<string> sttringList = new List<string>() {
+            "C# Tutorials",
+            "VB.NET Tutorials",
+            "Learn C++",
+            "MVC Tutorials" ,
+            "Java"
+        };
+
+        // LINQ Method Syntax
+        var rresult = stringList.Where(s => s.Contains("Tutorials"));
     }
 }
