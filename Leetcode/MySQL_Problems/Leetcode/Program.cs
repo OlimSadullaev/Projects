@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-/*var c=0;
+var c=0;
  c = int.Parse(Console.ReadLine());
  Console.WriteLine("Sun Mon Tue Wed Thu Fri Sat");
  Console.Write($"{c,3}");
@@ -28,7 +28,7 @@ for(int i = 0; i < 6; i++)
 {
     c = c % 31 + 1;
     Console.Write($"{c,4}");
-}*/
+}
 
 /*Hashtable numberNames = new Hashtable();
 numberNames.Add(1, "One"); //adding a key/value using the Add() method
@@ -244,16 +244,12 @@ foreach (var car in linq)
 
 Console.Read();*/
 
-class Student
+/*class Student
 {
-    public int StudentID { get; set; }
-    public String StudentName { get; set; }
-    public int Age { get; set; }
-}
-
-class Program
-{
-    static void Main(string[] args)
+    public int Id { get; set; }
+    public String Name { get; set; }
+    public int Rank { get; set; }
+}tic void Main(string[] args)
     {
         Student[] studentArray = {
             new Student() { StudentID = 1, StudentName = "John", Age = 18 },
@@ -279,38 +275,73 @@ class Program
             Console.WriteLine();
         }*/
 
-        Student[] teenAgerStudents = studentArray.Where(s => s.Age > 12 && s.Age < 20).ToArray();
+/*Student[] teenAgerStudents = studentArray.Where(s => s.Age > 12 && s.Age < 20).ToArray();
 
-        // Use LINQ to find first student whose name is Bill 
-        Student bill = studentArray.Where(s => s.StudentName == "Bill").FirstOrDefault();
+// Use LINQ to find first student whose name is Bill 
+Student bill = studentArray.Where(s => s.StudentName == "Bill").FirstOrDefault();
 
-        // Use LINQ to find student whose StudentID is 5
-        Student student5 = studentArray.Where(s => s.StudentID == 5).FirstOrDefault();
+// Use LINQ to find student whose StudentID is 5
+Student student5 = studentArray.Where(s => s.StudentID == 5).FirstOrDefault();
 
 
-        IList<string> stringList = new List<string>() {
-            "C# Tutorials",
-            "VB.NET Tutorials",
-            "Learn C++",
-            "MVC Tutorials" ,
-            "Java"
-        };
+IList<string> stringList = new List<string>() {
+    "C# Tutorials",
+    "VB.NET Tutorials",
+    "Learn C++",
+    "MVC Tutorials" ,
+    "Java"
+};
 
-        var result = from s in stringList
-                     where s.Contains("Tutorials")
-                     select s;
-        Console.WriteLine(result);
-        Console.WriteLine("----------------------");
+var result = from s in stringList
+             where s.Contains("Tutorials")
+             select s;
+Console.WriteLine(result);
+Console.WriteLine("----------------------");
 
-        IList<string> sttringList = new List<string>() {
-            "C# Tutorials",
-            "VB.NET Tutorials",
-            "Learn C++",
-            "MVC Tutorials" ,
-            "Java"
-        };
+IList<string> sttringList = new List<string>() {
+    "C# Tutorials",
+    "VB.NET Tutorials",
+    "Learn C++",
+    "MVC Tutorials" ,
+    "Java"
+};
 
-        // LINQ Method Syntax
-        var rresult = stringList.Where(s => s.Contains("Tutorials"));
-    }
+// LINQ Method Syntax
+var rresult = stringList.Where(s => s.Contains("Tutorials"));
+
+//  delegate (Student s) { return s.Age > 12 && s.Age < 20; };
+// s => s.Age > 12 && s.Age < 20;
+
 }
+}*/
+/*class Program:
+
+    List<Student> students = new List<Student>();
+    students.Add(new Student { Id = 1, Name = "Ramesh", Rank = 1, Age = 39 });
+    students.Add(new Student { Id = 2, Name = "Kapil", Rank = 1, Age = 32 });
+    students.Add(new Student { Id = 3, Name = "Suresh", Rank = 2, Age = 45 });
+    students.Add(new Student { Id = 4, Name = "Mahesh", Rank = 2, Age = 39 });
+
+    var studentsOrderByRank = from student in students
+                              orderby student.Rank, student.Age
+                              select student;
+
+    Console.WriteLine("Sorted Students:");
+    foreach (var student in studentsOrderByRank)
+    {
+        Console.WriteLine(student.Name);
+    }*/
+
+/*Entities e = new Entities();
+var empDetail = from emp in e.EmployeeMasters
+                let dep = emp.DepartmentMaster == null ? "" : emp.DepartmentMaster.DepartmentCode
+                select new Detail
+                {
+                    EmployeeId = emp.EmployeeId,
+                    EmployeeCode = emp.EmployeeCode,
+                    EmployeeName = emp.EmployeeName,
+                    DepartmentCode = dep,
+                };*/
+
+
+
