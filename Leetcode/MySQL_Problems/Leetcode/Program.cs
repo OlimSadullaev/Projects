@@ -419,7 +419,7 @@ class Program
                           });
 }*/
 
-IList<int> intList = new List<int>() { 10, 21, 30, 45, 50, 87 };
+/*IList<int> intList = new List<int>() { 10, 21, 30, 45, 50, 87 };
 IList<string> strList = new List<string>() { "One", "Two", null, "Four", "Five" };
 
 Console.WriteLine("1st Element in intList: {0}", intList.ElementAt(0));
@@ -448,4 +448,24 @@ IList<int> collection2 = new List<int>() { 4, 5, 6 };
 var collection3 = collection1.Concat(collection2);
 
 foreach (int i in collection3)
-    Console.WriteLine(i);
+    Console.WriteLine(i);*/
+
+/*IList<string> strList = new List<string>() { "One", "Two", "Three", "Four", "Five" };
+
+var newList = strList.Skip(3);
+
+foreach (var str in newList)
+    Console.WriteLine(str);*/
+
+IList<string> strList = new List<string>() {
+                                            "One",
+                                            "Two",
+                                            "Three",
+                                            "Four",
+                                            "Five",
+                                            "Six"  };
+
+var resultList = strList.SkipWhile(s => s.Length < 5);
+
+foreach (string str in resultList)
+    Console.WriteLine(str);
