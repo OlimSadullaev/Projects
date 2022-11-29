@@ -493,17 +493,20 @@ public class Program
 
 }*/
 // string collection
-IList<string> stringList = new List<string>() {
-    "C# Tutorials",
-    "VB.NET Tutorials",
-    "Learn C++",
-    "MVC Tutorials" ,
-    "Java"
-};
+using System;
+using System.Threading;
 
-// LINQ Query Syntax
-var result = from s in stringList
-             where s.Contains("Tutorials")
-             select s;
+namespace MultithreadingApplication
+{
+    class MainThreadProgram
+    {
+        static void Main(string[] args)
+        {
+            Thread th = Thread.CurrentThread;
+            th.Name = "MainThread";
 
-Console.WriteLine(result);
+            Console.WriteLine("This is {0}", th.Name);
+            Console.ReadKey();
+        }
+    }
+}
