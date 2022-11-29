@@ -493,7 +493,7 @@ public class Program
 
 }*/
 // string collection
-using System;
+/*using System;
 using System.Threading;
 
 namespace MultithreadingApplication
@@ -508,5 +508,105 @@ namespace MultithreadingApplication
             Console.WriteLine("This is {0}", th.Name);
             Console.ReadKey();
         }
+    }
+}*/
+
+/*namespace MultithreadingDemo
+{
+    class Program
+    {
+        public static void Main()
+        {
+            Console.WriteLine("Please enter the target number");
+            object target = Console.ReadLine();
+            // Create an instance of ParameterizedThreadStart delegate
+            ParameterizedThreadStart parameterizedThreadStart =
+                new ParameterizedThreadStart(Number.PrintNumbers);
+            Thread T1 = new Thread(parameterizedThreadStart);
+            // Pass the traget number to the start function, which
+            // will then be passed automatically to PrintNumbers() function
+            T1.Start(target);
+        }
+    }
+    class Number
+    {
+        public static void PrintNumbers(object target)
+        {
+            int number = 0;
+            if (int.TryParse(target.ToString(), out number))
+            {
+                for (int i = 1; i <= number; i++)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+    }
+}*/
+
+/*namespace MultithreadingDemo
+{
+    class Program
+    {
+        static int Total = 0;
+        public static void Main()
+        {
+            AddOneMillion();
+            AddOneMillion();
+            AddOneMillion();
+            Console.WriteLine("Total = " + Total);
+            Console.ReadLine();
+        }
+        public static void AddOneMillion()
+        {
+            for (int i = 1; i <= 1000000; i++)
+            {
+                Total++;
+            }
+        }
+    }
+}*/
+
+namespace MultithreadingDemo
+{
+    class Program
+    {
+        static int Total = 0;
+        public static void Main()
+        {
+            Thread thread1 = new Thread(Program.AddOneMillion);
+            Thread thread2 = new Thread(Program.AddOneMillion);
+            Thread thread3 = new Thread(Program.AddOneMillion);
+            thread1.Start();
+            thread2.Start();
+            thread3.Start();
+            thread1.Join();
+            thread2.Join();
+            thread3.Join();
+
+            Console.WriteLine("Total = " + Total);
+            Console.ReadLine();
+        }
+        /*public static void AddOneMillion()
+        {
+            for (int i = 1; i <= 1000000; i++)
+            {
+                Interlocked.Increment(ref Total);
+            }
+        }*/
+
+        static object _lock = new object();
+        public static void AddOneMillion()
+        {
+            for (int i = 1; i <= 1000000; i++)
+            {
+                lock (_lock)
+                {
+                    Total++;
+                }
+            }
+        }
+
+
     }
 }
