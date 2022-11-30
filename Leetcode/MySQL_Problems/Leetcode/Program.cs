@@ -567,7 +567,7 @@ namespace MultithreadingApplication
     }
 }*/
 
-namespace MultithreadingDemo
+/*namespace MultithreadingDemo
 {
     class Program
     {
@@ -595,18 +595,34 @@ namespace MultithreadingDemo
             }
         }*/
 
-        static object _lock = new object();
-        public static void AddOneMillion()
-        {
-            for (int i = 1; i <= 1000000; i++)
-            {
-                lock (_lock)
-                {
-                    Total++;
-                }
-            }
-        }
+/*      static object _lock = new object();
+      public static void AddOneMillion()
+      {
+          for (int i = 1; i <= 1000000; i++)
+          {
+              lock (_lock)
+              {
+                  Total++;
+              }
+          }
+      }
 
 
-    }
-}
+  }
+}*/
+long n = long.Parse(Console.ReadLine());
+for (int i=1; ; i++){
+      if(n%i==0){
+          n/=i;
+      }
+      else {
+          break;
+      }
+      }
+
+      if(n==1){
+          Console.WriteLine("true");
+      }
+      else {
+          Console.WriteLine("false");
+      }
