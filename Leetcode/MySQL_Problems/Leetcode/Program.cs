@@ -610,6 +610,7 @@ namespace MultithreadingApplication
 
   }
 }*/
+/*
 long n = long.Parse(Console.ReadLine());
 for (int i=1; ; i++){
       if(n%i==0){
@@ -626,3 +627,24 @@ for (int i=1; ; i++){
       else {
           Console.WriteLine("false");
       }
+      */
+using System;
+using System.IO;
+using System.Threading;
+public sealed class Program
+{
+    public static void Main()
+    {
+        var buffer = new byte[100];
+        var fs = new FileStream("bigFile.txt", FileMode.Open, FileAccess.Read, FileShare.Read, 1024, FileOptions.Asynchronous);
+
+        IAsyncResult result = fs.BeginRead(buffer, 0, buffer.Length, null, null);
+
+        // Do other things...
+
+        int numBytes = fs.EndRead(result);
+        fs.Close();
+
+        Console.WriteLine("Read {0}  Bytes:", numBytes);
+    }
+}
