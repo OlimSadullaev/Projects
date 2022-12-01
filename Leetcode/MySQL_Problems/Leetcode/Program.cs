@@ -628,7 +628,7 @@ for (int i=1; ; i++){
           Console.WriteLine("false");
       }
       */
-using System;
+/*using System;
 using System.IO;
 using System.Threading;
 public sealed class Program
@@ -647,4 +647,17 @@ public sealed class Program
 
         Console.WriteLine("Read {0}  Bytes:", numBytes);
     }
-}
+}*/
+IList<String> strList = new List<String>() { "One", "Two", "Three", "Four", "Five" };
+
+var commaSeperatedString = strList.Aggregate((s1, s2) => s1 + "! " + s2);
+
+Console.WriteLine(commaSeperatedString);
+
+IList<string> collection1 = new List<string>() { "One", "Two", "Three" };
+IList<string> collection2 = new List<string>() { "Five", "Six" };
+
+var collection3 = collection1.Concat(collection2);
+
+foreach (string str in collection3)
+    Console.WriteLine(str);
