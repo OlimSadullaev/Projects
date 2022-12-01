@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Leetcode
 {
-    public class Solution
+    public static class Solution
     {
-        public string IntToRoman(int num)
+        public static void IntToRoman()
         {
+            var num = int.Parse(Console.ReadLine());//
             string romanResult = string.Empty;
             string[] romanLetters = {
             "M", "CM", "D", "CD", "C", "XC", "L",
@@ -18,7 +19,7 @@ namespace Leetcode
             int[] numbers = {
             1000, 900, 500, 400, 100, 
             90, 50, 40, 10, 9, 5, 4, 1 };
-            
+            ////-- it can convert any number to Roman number
             int i = 0;
             while (num != 0)
             {
@@ -30,7 +31,7 @@ namespace Leetcode
                     i++;
                 }
             }
-            return romanResult;
+            Console.WriteLine(romanResult);
         }
     }
 }
