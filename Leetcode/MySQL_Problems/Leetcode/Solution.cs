@@ -8,9 +8,10 @@ namespace Leetcode
 {
     public static class Solution
     {
-        /*public static void IntToRoman()
+        public static void IntToRoman()
         {
             var num = int.Parse(Console.ReadLine());//
+            var n = double.Parse(Console.ReadLine());
             string romanResult = string.Empty;
             string[] romanLetters = {
             "M", "CM", "D", "CD", "C", "XC", "L",
@@ -30,12 +31,15 @@ namespace Leetcode
                 else{
                     i++;
                 }
+                Console.WriteLine($"{num}");
+                Console.WriteLine(romanResult);
+
             }
             Console.WriteLine(romanResult);
-        }*/
+        }
         //---------------------
 
-        public static void RomanToInt()
+        /*public static void RomanToInt()
         {
             var s = Console.ReadLine();
             int sum = 0;
@@ -52,8 +56,8 @@ namespace Leetcode
 
             for(int i=0; i < s.Count; i++)
             {
-
+                Console.WriteLine("");
             }
-        }
+        }*/
     }
 }
