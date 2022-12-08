@@ -8,60 +8,28 @@ namespace Leetcode
 {
     public static class Solution
     {
-        public static void IntToRoman()
+        public static void IntToRoman1() //////11111111
         {
             var num = int.Parse(Console.ReadLine());//
-            var n = double.Parse(Console.ReadLine());
-            string romanResult = string.Empty;
-            string[] romanLetters = {
-            "M", "CM", "D", "CD", "C", "XC", "L",
-            "XL", "X", "IX", "V", "IV", "I" };
-           
-            int[] numbers = {
-            1000, 900, 500, 400, 100, 
-            90, 50, 40, 10, 9, 5, 4, 1 };
-            ////-- it can convert any number to Roman number
-            int i = 0;
-            while (num != 0)
+            //var n = double.Parse(Console.ReadLine());
+            if (num <= 0) Console.WriteLine("");
+            string[] roman = { "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" };
+            int[] n = { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };
+            StringBuilder sb = new();
+            for(int i=0; num!=0; i++)
             {
-                if (num >= numbers[i]){
-                    num -= numbers[i];
-                    romanResult += romanLetters[i];
+                while(num >= n[i])
+                {
+                    num -= n[i];
+                    sb.Append(roman[i]);
                 }
-                else{
-                    i++;
-                }
-                Console.WriteLine($"{num}");
-                Console.WriteLine(romanResult);
-
             }
-            Console.WriteLine(romanResult);
+            Console.WriteLine(sb.ToString());
+
         }
-        //---------------------
-
-        /*public static void RomanToInt()
-        {
-            var s = Console.ReadLine();
-            int sum = 0;
-            Dictionary<char, int> romanNumbersDictionary = new()
-            {
-                { 'I', 1 },
-                { 'V', 5 },
-                { 'X', 10 },
-                { 'L', 50 },
-                { 'C', 100 },
-                { 'D', 500 },
-                { 'M', 1000 }
-            };
-
-            for(int i=0; i < s.Count; i++)
-            {
-                Console.WriteLine("");
-            }
-        }*/
         ////-----------------------------
         //Roman to int
-        public static void RomanToInt()
+        public static void RomanToInt2() ////////2222222
         {
             string s = Console.ReadLine();
 
@@ -74,6 +42,22 @@ namespace Leetcode
             dictionary.Add('C', 100);
             dictionary.Add('D', 500);
             dictionary.Add('M', 1000);
+
+            int solution = 0;
+
+            s = s.Replace("IV", "IIII")
+            .Replace("IX", "VIIII")
+            .Replace("XL", "XXXX")
+            .Replace("XC", "LXXXX")
+            .Replace("CD", "CCCC")
+            .Replace("CM", "DCCCC");
+
+            foreach (char c in s)
+            {
+                solution += dictionary[c];
+            }
+
+            Console.WriteLine(solution);
         }
     }
 }

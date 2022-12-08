@@ -9,7 +9,8 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Solution.IntToRoman();//
+        Solution.IntToRoman1();
+        //Solution.RomanToInt2();
 
     }
 }
