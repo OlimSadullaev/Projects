@@ -59,5 +59,21 @@ namespace Leetcode
                 Console.WriteLine("");
             }
         }*/
+        ////-----------------------------
+        //Roman to int
+        public static void RomanToInt()
+        {
+            string s = Console.ReadLine();
+
+            var dictionary = new Dictionary<char, int>();
+
+            dictionary.Add('I', 1);
+            dictionary.Add('V', 5);
+            dictionary.Add('X', 10);
+            dictionary.Add('L', 50);
+            dictionary.Add('C', 100);
+            dictionary.Add('D', 500);
+            dictionary.Add('M', 1000);
+        }
     }
 }
