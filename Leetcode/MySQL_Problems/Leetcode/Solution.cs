@@ -56,8 +56,9 @@ namespace Leetcode
             {
                 solution += dictionary[c];
             }
-
             Console.WriteLine(solution);
         }
+
+
     }
 }
