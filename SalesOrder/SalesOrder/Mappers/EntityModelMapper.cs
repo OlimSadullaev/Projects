@@ -18,6 +18,13 @@ namespace SalesOrder.Api.Mappers
                 );
         }
 
+        private static Media GetImageEnt(IFormFile file)
+        {
+            using var stream = new MemoryStream();
 
+            file.CopyTo(stream);
+
+            return new Media(Guid.NewGuid(), stream.ToArray());
+        }
     }
 }
