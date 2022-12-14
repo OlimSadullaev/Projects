@@ -26,5 +26,14 @@
             Price = price;
             AvailableSize = availableSize;
         }
+
+        public Photo(string brendName, string country, string price, string availableSize, DateTime createdAt, List<Media> medias)
+        {
+            BrendName = brendName;
+            Country = country;
+            AvailableSize = availableSize;
+            CreatedAt = createdAt;
+            Medias = medias;
+        }
     }
 }
