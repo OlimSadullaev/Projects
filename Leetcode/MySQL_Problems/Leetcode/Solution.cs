@@ -59,6 +59,16 @@ namespace Leetcode
             Console.WriteLine(solution);
         }
 
+        public static void IsPalindrome3() //////3333333333
+        {
+            var x = int.Parse(Console.ReadLine());
 
+            string first = x.ToString();
+            char[] charArr = first.ToCharArray();
+            char[] reverseArr = first.ToCharArray();
+
+            Array.Reverse(reverseArr);
+            Console.WriteLine(charArr.SequenceEqual(reverseArr));
+        }
     }
 }

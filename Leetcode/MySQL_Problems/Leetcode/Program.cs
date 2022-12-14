@@ -11,6 +11,7 @@ class Program
     {
         //Solution.IntToRoman1();
         //Solution.RomanToInt2();
+        Solution.IsPalindrome3();
 
     }
 }
