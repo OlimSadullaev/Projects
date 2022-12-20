@@ -8,6 +8,9 @@ in other small projects included stream reader
 <h4>Threading</h4>
 <h4>Asyncronous programming</h4>
 <h4>LeetCode problem solving</h4>
+<h4>LeetCode SQL problem solving</h4>
+
+
 
 
 
