@@ -2,5 +2,8 @@
 {
     public class DbContext
     {
+        public DbContext(string v)
+        {
+        }
     }
 }
